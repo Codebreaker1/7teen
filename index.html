@@ -1,0 +1,60 @@
+<html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+  <link rel="stylesheet" href="stylesheets/app.css">
+  <script src="javascripts/modernizr.foundation.js"></script>
+
+
+<title>
+
+7Teen
+
+</title>
+</head>
+<script>
+
+
+
+$("#slideshow > div:gt(0)").hide();
+
+setInterval(function() { 
+  $('#slideshow > div:first')
+    .fadeOut(1000)
+    .next()
+    .fadeIn(1000)
+    .end()
+    .appendTo('#slideshow');
+},  3000);
+
+
+</script>
+
+<body>
+<div id="slideshow">
+   <div>
+     <img src="css/images/12.jpg">
+   </div>
+   <div>
+     <img src="css/images/3.jpg">
+   </div>
+   
+</div>
+
+<div id="sh">
+
+<a href="https://www.facebook.com/7teenEvents?fref=ts">Visit facebook</a>
+
+</div>
+
+
+
+</body>
+
+
+
+</html>
